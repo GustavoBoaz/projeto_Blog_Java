@@ -1,0 +1,225 @@
+/* Forms Pesquisa */
+.forms-pesquisa {
+    outline: none;
+    border: none;
+    width: 0px;
+    height: 36px;
+    border-radius: 10px;
+    padding-left: 40px;
+    margin-bottom: 4px;
+
+    transition: all 400ms;
+}
+
+.forms-i i{
+    position: absolute;
+    font-size: 18px;
+    margin: 10px 10px;
+}
+
+.forms-i:hover > .forms-pesquisa{
+    width: 387px;
+}
+
+.forms-pesquisa:focus {
+    width: 387px;
+}
+
+/* Simple Forms */
+.forms-simple {
+    outline: none;
+    border: none;
+    width: 180px;
+    height: 36px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+
+    transition: all 400ms;
+}
+
+/* Imput number Forms */
+.input-number input[type=number] {
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 36px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 3px;
+}
+
+.input-number input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Imput Range */
+.input-slider {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 18px;
+    background: var(--bn-1);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.input-slider:hover {
+    opacity: 1;
+}
+
+.input-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+    background: var(--bn-4);
+    cursor: pointer;
+}
+
+.input-slider::-moz-range-thumb {
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+    background: var(--bn-4);
+    cursor: pointer;
+}
+
+/*Imput Radio*/
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio] + label > span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 3px 6px 3px 3px;
+    border: 1px solid var(--bn-4);
+    border-radius: 8px;
+    vertical-align: bottom;
+}
+
+input[type=radio]:checked + label > span > span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 3px;
+    border: 1px solid var(--bpc);
+    border-radius: 5px;
+    background: var(--bpc);
+}
+
+input[type=radio] + label > span:hover {
+    cursor: pointer;
+    background: var(--bpc);
+    opacity: 0.5;
+}
+
+/* Imput Checkbox */
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label > span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 3px 6px 3px 3px;
+    border: 1px solid var(--bn-4);
+    border-radius: 2px;
+    vertical-align: bottom;
+}
+
+input[type=checkbox]:checked + label > span > span {
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 3px;
+    border: 1px solid var(--bpc);
+    border-radius: 2px;
+    background: var(--bpc);
+}
+
+input[type=checkbox] + label > span:hover {
+    cursor: pointer;
+    background: var(--bpc);
+    opacity: 0.5;
+}
+
+/* Imput Time */
+.forms-time {
+    outline: none;
+    border: none;
+    height: 36px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+
+    transition: all 400ms;
+}
+
+/* Dropdown Select */
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: var(--bn-1);
+    background-image: none;
+}
+  /* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+/* Custom Select */
+.select {
+    position: relative;
+    display: flex;
+    width: 190px;
+    height: 3em;
+    line-height: 3;
+    background: var(--bn-1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: var(--tn-4);
+    cursor: pointer;
+}
+  /* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: var(--bn-1);
+    color: var(--bn-4);
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+    color: var(--tpc);
+}
+
+
+@media screen and (min-width:740px) {
+    .forms-pesquisa {
+        width: 200px;
+    }
+}

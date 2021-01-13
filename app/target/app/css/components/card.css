@@ -1,0 +1,175 @@
+/* Card post */
+.card-post{
+    position: relative;
+    cursor: pointer;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.card-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-post div {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-post .slogan{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 400ms;
+}
+
+.card-post:hover {
+    transform: scale(1.01);
+}
+
+/* Cart consultoria*/
+.card-consultoria {
+    position: relative;
+
+    height: 250px;
+}
+
+.card-consultoria .front{
+    position: absolute;
+    display: block;
+
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.card-consultoria .back{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    padding: 20px;
+
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.card-consultoria .key-card{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 4;
+}
+
+.card-consultoria .del-card{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 4;
+}
+
+.front .logo-icon{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+}
+
+.front .front-title{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back .back-contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.back .back-data {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.data-money, .data-time, .data-weckend-clock, .data_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.weckend-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Cart consultoria perfil e feed*/
+.card-consultoria-perfil, .card-consultoria-feed {
+    width: 400px;
+    margin: 5px;
+}
+
+.header-card {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header-card img{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:740px) {
+    .card-consultoria-perfil, .card-consultoria-feed, .header-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .card-consultoria-perfil, .card-consultoria-feed, .header-card {
+        width: 100%;
+    }
+}

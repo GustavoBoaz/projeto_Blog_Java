@@ -1,0 +1,59 @@
+.modal-full {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    border-radius: 5px;
+
+    overflow: auto;
+    z-index: 30;
+    padding: 15px;
+    display: none;
+}
+
+.modal-center {
+    position: fixed;
+    top: 65px;
+    bottom: 70px;
+    left: 8px;
+    right: 8px;
+
+    border-radius: 5px;
+
+    overflow: auto;
+    z-index: 2;
+    padding: 15px;
+    display: none;
+}
+
+.modal-bot {
+    position: fixed;
+    top: 12%;
+    bottom: 1%;
+    left: 1%;
+    right: 1%;
+
+    border-radius: 5px;
+
+    overflow: auto;
+    z-index: 2;
+    padding: 15px;
+    display: none;
+}
+
+.modal-top {
+    position: fixed;
+    top: 7px;
+    bottom: 70px;
+    left: 8px;
+    right: 8px;
+
+    border-radius: 5px;
+
+    overflow: auto;
+    z-index: 2;
+    padding: 15px;
+    display: none;
+}
