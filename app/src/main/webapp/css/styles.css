@@ -52,3 +52,24 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+#conta_lista {
+    position: fixed;
+    top: 55px;
+    right: 10px;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+#conta_lista form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}

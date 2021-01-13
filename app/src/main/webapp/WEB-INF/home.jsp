@@ -27,7 +27,6 @@
     <%@include file="templates/ini_theme.jsp" %>
     <main id="main_home" class="bn-1 scrollbar">
         <%@include file="templates/comp_navbar.jsp" %>
-        Welcome ${name} , ${email}
         <div id="card">
             <c:forEach items="${posts}" var="post">
                 <div class="card-post bn-5">
@@ -35,9 +34,15 @@
                         <p class="font-semi-bold tn-4" style="margin-top: 50px; margin-bottom: 50px;">${post.descricao}</p>
                     </div>           
                     <c:choose>
-                        <c:when test="${post.id == id}">
+                        <c:when test="${post.idUsuario == id}">
                             <a class="slogan bn-4">
                                 <h4 class="font-semi-bold tn-1">${name}</h4>
+                                <form action="/app/delete.post.blog" method="get">
+                                    <input type="text" name="delete_post" value="${post.id}" hidden>
+                                    <button class="btn-is bn-1" type="submit" >
+                                        <i class="fas fa-trash red medium"></i>
+                                    </button>
+                                </form>
                             </a>
                         </c:when>    
                         <c:otherwise>

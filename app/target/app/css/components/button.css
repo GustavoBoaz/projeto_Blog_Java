@@ -68,7 +68,7 @@
 .btn-is:hover {
     background-color: var(--bn-5);
 }
-/* Button icon text */
+/* Button text */
 .btn-t {
     display: flex;
     flex-direction: row;

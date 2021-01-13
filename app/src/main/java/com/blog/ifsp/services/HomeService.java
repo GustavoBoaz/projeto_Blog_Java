@@ -1,6 +1,7 @@
 package com.blog.ifsp.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.blog.ifsp.dao.PostDAO;
 import com.blog.ifsp.models.Post;
@@ -22,6 +23,19 @@ public class HomeService implements IHomeService {
         } else {
             return list;
         }
+    }
+
+    @Override
+    public void deletePostById(Long id) {
+        Optional<Post> oldPost = dao.get(id);
+        if (oldPost.isPresent()) {
+            dao.delete(oldPost.get());
+        }
+    }
+
+    @Override
+    public void saveNewPost(Post post) {
+        dao.save(post);
     }
 
 
