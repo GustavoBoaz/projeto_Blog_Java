@@ -1,0 +1,35 @@
+/* Font project */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Type fonts */
+.font-light {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.font-regular {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.font-medium {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.font-semi-bold {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.font-bold {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}

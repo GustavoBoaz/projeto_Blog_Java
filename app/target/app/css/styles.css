@@ -1,0 +1,54 @@
+@import url("components/theme.css");
+@import url("components/colors.css");
+@import url("components/image.css");
+@import url("components/fonts.css");
+@import url("components/button.css");
+@import url("components/tooltip.css");
+@import url("components/scrollbar.css");
+@import url("components/modal.css");
+@import url("components/menu.css");
+@import url("components/forms.css");
+@import url("components/card.css");
+@import url("components/navbar.css");
+
+#main_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main_home {
+    position: fixed;
+    top: 48px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 2px;
+}
+
+#container_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#content_form {
+    display: flex;
+    flex-direction: column;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
